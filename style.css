@@ -1,0 +1,573 @@
+/**
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'australisregular';
+    src: url('fonts/austrsc-webfont.eot');
+    src: url('fonts/austrsc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/austrsc-webfont.woff2') format('woff2'),
+         url('fonts/austrsc-webfont.woff') format('woff'),
+         url('fonts/austrsc-webfont.ttf') format('truetype'),
+         url('fonts/austrsc-webfont.svg#australisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'australisitalic';
+    src: url('fonts/austrita-webfont.eot');
+    src: url('fonts/austrita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/austrita-webfont.woff2') format('woff2'),
+         url('fonts/austrita-webfont.woff') format('woff'),
+         url('fonts/austrita-webfont.ttf') format('truetype'),
+         url('fonts/austrita-webfont.svg#australisitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+**/
+
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Spectral', serif;
+	/**font-family: 'Oswald', sans-serif;**/
+}
+
+article{
+	margin: 0 auto;
+	
+}
+
+header {
+	width: 100%;
+	background: #184275;
+	height: 70px;
+	position: fixed;
+	z-index: 2;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}
+
+h1 {
+	display: inline-block;
+	margin: 0 30px;
+	position: absolute;
+	z-index: 99;
+}
+
+h2 {
+	font-size: 1em;
+	font-family: 'Oswald', sans-serif
+	}
+
+h4 {
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+}
+
+h5 {
+	font-size: 0.7em;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+}
+
+.nombre p{
+	font-family: 'Oswald', sans-serif;
+	}
+
+nav {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 22px;
+	margin-left: 180px;
+	
+
+}
+
+nav li {
+	line-height: 14px;
+	display: inline-block;
+	width: 100px;
+	border-left: 1px solid #BDCCD4;
+	padding-left: 10px;
+	text-transform: uppercase;
+	color: #dae5ea;
+	vertical-align: middle;
+
+}	
+
+nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+nav li a:hover{
+	text-decoration: underline;
+}
+
+@media (max-width: 500px){
+	#texto h2{
+		font-size: 36px;
+	}
+	}
+
+footer {
+	background: #000;
+	padding: 20px 0;
+	
+}
+
+#contenido {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+#principal {
+	/*background: url(images/principal.jpg) no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+    padding-top: 70px;
+}
+
+#pial {
+	background: url(images/pial/pial_header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#larraguibel {
+	background: url(images/larraguibel/larraguibel_header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#gomez {
+	background: url(images/gomez/gomez_header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#escudero {
+	background: url(images/escudero/escudero_header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+
+
+
+#julepe {
+	background: url(images/julepe/julepe_header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#squella {
+	background: url(images/squella/squella_header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#mela {
+	background: url(images/mela/mela_header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+
+#deichler {
+	background: url(images/deichler/deichler_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#cuevas {
+	background: url(images/cuevas/cuevas_slider.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#vigil {
+	background: url(images/vigil/vigil_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#larra {
+	background: url(images/larrain/larrain_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+
+#lavin {
+	background: url(images/lavin/lavin_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+
+#safrana {
+	background: url(images/safrana/safrana_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#yanez {
+	background: url(images/yanez/yanez_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#varas {
+	background: url(images/varas/varas_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#simonetti {
+	background: url(images/simonetti/simonetti_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+#barone {
+	background: url(images/barone/barone_header.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+
+#cristi {
+	background: url(images/cristi/cristi_header.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#rodriguez {
+	background: url(images/rodriguez/rodriguez_header.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#huaso {
+	background: url(images/larraguibel/larraguibel_header.jpg) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#eclipse {
+	background: url(images/eclipse/eclipse_header.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#pillan {
+	background: url(images/pillan/pillan_header.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#clavel {
+	background: url(images/clavel/clavel_header.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#galvez {
+	background: url(images/galvez/galvez_header.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#elias {
+	background: url(images/elias/elias_header.png) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	
+	position: relative;
+}
+
+#encabezado {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+
+#texto {
+	width: 70%;
+	color: #fff;
+	background: rgba(24,66,117,0.8);
+	margin: 0 auto;
+	position:absolute;
+    bottom: 0;
+	margin-left: 8%;
+	padding: 1% 7% 2%;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 100;
+}
+
+#texto h2 {
+	font-size: 92px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+}
+
+#texto h3{
+  font-size: 33px;
+  font-weight: lighter;
+  line-height: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#datos {
+	width: 100%;
+	color: #fff;
+	background: rgba(51,51,51,0.8);
+	margin: 0 auto;
+	position:absolute;
+	bottom: 0;
+	padding: 1% 0;
+	text-align: left;
+	font-size: 30px;
+	font-weight: 100;
+}
+
+#datos h2 {
+	font-size: 92px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+}
+
+#datos h3{
+  font-size: 33px;
+  font-weight: lighter;
+  line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+#izq {
+	max-width: 730px;
+	display: inline-block;
+	font-size: 18px;
+	text-align: justify;
+	-webkit-font-smoothing: antialiased;
+}
+
+#izq p{
+	margin-bottom: 30px;
+}
+
+#der {
+	width: 255px;
+	display: inline-block;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	padding: 20px;
+	vertical-align: top;
+	margin-left: 80px;
+	font-size: 18px;
+	color: #333;
+}
+
+#der h2{
+	font-family: 'Oswald', sans-serif
+	font-size: 33px;
+	
+}
+
+#der p {
+	padding: 10px;
+	color: #5D5D5D;
+}
+
+#izq blockquote {
+	
+	background: #FE6C3D;
+	color: #fff;
+	padding: 25px;
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+#izq blockquote #name {
+	margin-left: 500px;
+	font-size: 30px;
+}
+
+
+#fotos {
+	background: #184275;
+	font-family: "bebas-neue";
+	font-size: 90px;
+	color: #fff;
+	text-align: center;
+	padding: 40px 0;
+}
+
+#fotos img {
+	border: 5px solid #fff;
+}
+
+#videos {
+	font-family: "bebas-neue";
+	font-size: 90px;
+	text-align: center;
+	padding: 40px 0;
+	color: #184275;
+	
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    
+}
+
+
+
+footer p{
+	color:white;
+}
+
